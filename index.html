@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Word and Character Count</title>
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="header">
+        <h1>S. W. C. C.</h1>
+        <p>Simple Word and Character Count</p>
+    </div>
+    <div class="container">
+        <div class="flex-container">
+            <div class="form-container">
+                <h2>INPUT TEXT:</h2>
+                <form>
+                    <textarea id="inputArea" class="form-control" placeholder="Type any text here"></textarea>
+                    <div class="btn-full">
+                        <button type="button" class="btn-submit-clr" id="clearBtn">Clear</button>
+                    </div>
+                </form>
+            </div>
+            <div class="result-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th colspan="2">
+                                <h2>RESULT:</h2>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><h3>Words: <span id="wordCountResult">0</span></h3></td>
+                        </tr>
+                        <tr>
+                            <td><h3>Characters<br/>(without spaces): <span id="charCountResult">0</span></h3></td>
+                        </tr>
+                        <tr>
+                            <td><h3>Characters<br/>(with spaces): <span id="charSpaceCountResult">0</span></h3></td>
+                        </tr>
+                        <tr>
+                            <td><h3>Paragraph: <span id="parCountResult">0</span></h3></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p>
+            Copyright <span id="newYear"></span> by Hanna Rosary Lumaad.
+        </p>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+</html>
